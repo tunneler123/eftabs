@@ -634,33 +634,33 @@ function install_xray_ws() {
 menu() {
   update_sh
   shell_mode_check
-  echo -e "\t Xray 安装管理脚本 ${Red}[${shell_version}]${Font}"
+  echo -e "\t Xray install management script ${Red}[${shell_version}]${Font}"
   echo -e "\t---authored by wulabing---"
   echo -e "\thttps://github.com/wulabing\n"
 
-  echo -e "当前已安装版本：${shell_mode}"
-  echo -e "—————————————— 安装向导 ——————————————"""
-  echo -e "${Green}0.${Font}  升级 脚本"
-  echo -e "${Green}1.${Font}  安装 Xray (VLESS + TCP + XTLS / TLS + Nginx)"
-  echo -e "${Green}2.${Font}  安装 Xray (VLESS + TCP + XTLS / TLS + Nginx 及 VLESS + TCP + TLS + Nginx + WebSocket 回落并存模式)"
-  echo -e "—————————————— 配置变更 ——————————————"
-  echo -e "${Green}11.${Font} 变更 UUID"
-  echo -e "${Green}13.${Font} 变更 连接端口"
-  echo -e "${Green}14.${Font} 变更 WebSocket PATH"
-  echo -e "—————————————— 查看信息 ——————————————"
-  echo -e "${Green}21.${Font} 查看 实时访问日志"
-  echo -e "${Green}22.${Font} 查看 实时错误日志"
-  echo -e "${Green}23.${Font} 查看 Xray 配置链接"
-  #    echo -e "${Green}23.${Font}  查看 V2Ray 配置信息"
-  echo -e "—————————————— 其他选项 ——————————————"
-  echo -e "${Green}31.${Font} 安装 4 合 1 BBR、锐速安装脚本"
-  echo -e "${Yellow}32.${Font} 安装 MTproxy （不推荐使用,请相关用户关闭或卸载）"
-  echo -e "${Green}33.${Font} 卸载 Xray"
-  echo -e "${Green}34.${Font} 更新 Xray-core"
-  echo -e "${Green}35.${Font} 安装 Xray-core 测试版 (Pre)"
-  echo -e "${Green}36.${Font} 手动更新 SSL 证书"
-  echo -e "${Green}40.${Font} 退出"
-  read -rp "请输入数字：" menu_num
+  echo -e "Currently installed version: ${shell_mode}"
+  echo -e "—————————————— Installation Wizard ———————————————"""
+  echo -e "${Green}0.${Font} upgrade script"
+  echo -e "${Green}1.${Font} install Xray (VLESS + TCP + XTLS / TLS + Nginx)"
+  echo -e "${Green}2.${Font} install Xray (VLESS + TCP + XTLS / TLS + Nginx and VLESS + TCP + TLS + Nginx + WebSocket fallback to coexistence mode)"
+  echo -e "—————————————— Configuration change ———————————————”
+  echo -e "${Green}11.${Font} change UUID"
+  echo -e "${Green}13.${Font} change port"
+  echo -e "${Green}14.${Font} change WebSocket PATH"
+  echo -e "——————————————— View information ———————————————”
+  echo -e "${Green}21.${Font} View real-time access log"
+  echo -e "${Green}22.${Font} View real-time error log"
+  echo -e "${Green}23.${Font} view Xray configuration link"
+ # echo -e "${Green}23.${Font} View V2Ray configuration information"
+  echo -e "——————————————Other options ———————————————”
+  echo -e "${Green}31.${Font} install 4-in-1 BBR, Swift install script"
+  echo -e "${Yellow}32.${Font} install MTproxy (not recommended, please close or uninstall the relevant user)"
+  echo -e "${Green}33.${Font} uninstall Xray"
+  echo -e "${Green}34.${Font} update Xray-core"
+  echo -e "${Green}35.${Font} install Xray-core beta (Pre)"
+  echo -e "${Green}36.${Font} manually renew SSL certificate"
+  echo -e "${Green}40.${Font} exit"
+  read -rp "Please enter a number:" menu_num
   case $menu_num in
   0)
     update_sh
