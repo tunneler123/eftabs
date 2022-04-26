@@ -2,7 +2,7 @@
 
 
 # System Required: Debian 9+/Ubuntu 18.04+/Centos 7+
-
+# By PHC-EFTABS
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 stty erase ^?
