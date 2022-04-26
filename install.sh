@@ -650,7 +650,6 @@ menu() {
   # echo -e "${Green}23.${Font} View V2Ray configuration information"
   echo -e "——————————————Other options ———————————————”
   echo -e "${Green}31.${Font} install 4-in-1 BBR, Swift install script"
-  echo -e "${Yellow}32.${Font} install MTproxy (not recommended, please close or uninstall the relevant user)"
   echo -e "${Green}33.${Font} uninstall Xray"
   echo -e "${Green}34.${Font} update Xray-core"
   echo -e "${Green}35.${Font} install Xray-core beta (Pre)"
