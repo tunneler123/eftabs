@@ -668,7 +668,7 @@ menu() {
     install_xray_ws
     ;;
   11)
-    read -rp "Please enter UUID:" UUID
+    read -rp "请输入 UUID:" UUID
     if [[ ${shell_mode} == "tcp" ]]; then
       modify_UUID
     elif [[ ${shell_mode} == "ws" ]]; then
@@ -683,21 +683,21 @@ menu() {
     ;;
   14)
     if [[ ${shell_mode} == "ws" ]]; then
-      read -rp "Please enter a path (example: /wulabing/ requires / on both sides):" WS_PATH
+      read -rp "请输入路径(示例：/wulabing/ 要求两侧都包含 /):" WS_PATH
       modify_fallback_ws
       modify_ws
       restart_all
     else
-      print_error "The current mode is not Websocket mode"
+      print_error "当前模式不是 Websocket 模式"
     fi
     ;;
-  twenty one)
+  21)
     tail -f $xray_access_log
     ;;
-  twenty two)
+  22)
     tail -f $xray_error_log
     ;;
-  twenty three)
+  23)
     if [[ -f $xray_conf_dir/config.json ]]; then
       if [[ ${shell_mode} == "tcp" ]]; then
         basic_information
@@ -705,7 +705,7 @@ menu() {
         basic_ws_information
       fi
     else
-      print_error "xray configuration file does not exist"
+      print_error "xray 配置文件不存在"
     fi
     ;;
   31)
@@ -734,7 +734,7 @@ menu() {
     exit 0
     ;;
   *)
-    print_error "Please enter the correct number"
+    print_error "请输入正确的数字"
     ;;
   esac
 }
